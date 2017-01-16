@@ -1,0 +1,6 @@
+test:
+  override:
+  - mkdir -p ./test-output
+  - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+  - npm test
+  - cp ./test-output/test-results.xml $CIRCLE_TEST_REPORTS/junit/
