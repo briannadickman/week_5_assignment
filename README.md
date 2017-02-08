@@ -20,7 +20,7 @@ console log out somethingFun's first and last name
 add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
 
 ### Step 4 (Pro Mode)
-add another method to somethingFun named that receives a boolean: "isHappy( happy )"
+add another method to somethingFun named "isHappy" that receives a boolean parameter named "happy"
 
 within this method, check if the parameter "happy" is true
 
