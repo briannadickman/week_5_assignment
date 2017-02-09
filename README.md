@@ -25,10 +25,12 @@ You can refer to the Codecademy lesson JavaScript 8 (Objects II) for reference i
 
 ### Step 4 (Pro Mode)
 Check out "bringItTogether.js" which (ahem) brings together weeks 4 and 5. There are many tasks that take multiple steps to compelte in here including the following:
+
 * the concepts used in Normal and Hard Mode
 * converting arrays to objects
 * using constructors
 
+You will find the problem description in a separate markdown file: [bringItTogether.md](bringItTogether.md). Good luck!
 
 ### Files Provided
 * index.html - Sources the JavaScript file (`prototypes.js`). There isn't much happening here and you are not required to make changes to this file.
