@@ -1,6 +1,6 @@
 
 ## Objects and Prototypes
-Here we'll take a look at a prototype class and explore creating a new ne as well as
+Here we'll take a look at using a prototype class and explore creating a new object from this class. Also, we'll delve into the basics of Object Oriented Programming by using properties and methods of an object derived from a prototype.
 
 ### Topics Covered
 * Creating a new object from a prototype class
@@ -20,7 +20,7 @@ console log out somethingFun's first and last name
 add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
 
 ### Step 4 (Pro Mode)
-add another method to somethingFun named "isHappy" that receives a boolean parameter named "happy"
+add another method to somethingFun named that receives a boolean: "isHappy( happy )"
 
 within this method, check if the parameter "happy" is true
 
