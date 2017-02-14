@@ -2,7 +2,7 @@ function Animal(first, last, type) {
     this.firstName = first;
     this.lastName = last;
     this.type = type;
-};
+}
 
 // here's an example Animal:
 var giantCactus = new Animal( "Giant", "Cactus", "Dog" );
