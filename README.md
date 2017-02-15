@@ -17,7 +17,7 @@ You can refer to the Codecademy lesson JavaScript 8 (Objects II) for reference i
 * console log out somethingFun's first and last name
 
 ### Step 3 (Hard Mode)
-* add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
+* add a method to somethingFun named "meow()" that console logs "meow" when called. ex: somethingFun.meow()
 * add another method to somethingFun named that receives a boolean argument "happy"
 * within this method, check if the "happy" is true
  * if so, console log "purrrrrr"
