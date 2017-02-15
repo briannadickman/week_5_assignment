@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
-var somethingFun = require('../presto-pesto/prototypes').somethingFun;
+var somethingFun = require('../assignment/prototypes').somethingFun;
 var logSpy;
 
 beforeEach(function() {
