@@ -1,7 +1,7 @@
 var chai = require('chai');
 var rooms = require('../assignment/bringItTogether');
 
-describe('Testing the Classroom Builder Application', function() {
+describe('promode Testing the Classroom Builder Application', function() {
 
   describe('the Room constructor function', function() {
 
