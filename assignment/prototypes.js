@@ -16,7 +16,6 @@ var giantCactus = new Animal( "Giant", "Cactus", "Dog" );
 // PART 3 (Hard Mode)
 // add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
 
-// PART 4 (Pro Mode)
 // add another method to somethingFun named "isHappy" that receives a boolean argument "happy"
 // within this method, check if "happy" is true
 // if so, console log "purrrrrr"
