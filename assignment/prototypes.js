@@ -18,7 +18,7 @@ console.log("Hi, my name is " + somethingFun.firstName, somethingFun.lastName);
 // PART 3 (Hard Mode)
 // add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
 Animal.prototype.meow = function() {
-  console.log("moew");
+  console.log("meow");
 };
 
 // add another method to somethingFun named "isHappy" that receives a boolean argument "happy"
@@ -26,8 +26,8 @@ Animal.prototype.meow = function() {
 // if so, console log "purrrrrr"
 // if not, console log "crabby face"
 
-Animal.prototype.isHappy = function(boolean) {
-  if(boolean === true) {
+Animal.prototype.isHappy = function(happy) {
+  if(happy === true) {
     console.log("purrrrrr");
   }
   else {
