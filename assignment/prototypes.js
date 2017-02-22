@@ -13,7 +13,7 @@ var somethingFun = new Animal("Something", "Fun", "Cat");
 
 // PART 2
 // console log out somethingFun's first and last name
-console.log(somethingFun.firstName, somethingFun.lastName);
+console.log("Hi, my name is " + somethingFun.firstName, somethingFun.lastName);
 
 // PART 3 (Hard Mode)
 // add a method to somethingFun named "meow()" that console logs "moew" when called. ex: somethingFun.meow()
