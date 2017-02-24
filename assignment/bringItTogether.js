@@ -14,7 +14,7 @@ function convertRooms() {
   // Write code here, remember to log the new object you create at the end of
   // each iteration.
 
-  
+
 (seatsNeeded, rollingChairs, cubes, colorOfSeats)
   this.seatsNeeded = seats;
   this.rollingChairs = chairs;
@@ -52,6 +52,8 @@ function Room(roomArray) {
 **/
 function RollingChair(type, color) {
   // Write constructor logic here to create a single rolling chair object
+  this.type = type;
+  this.color = color;
 }
 
 /**
@@ -62,7 +64,17 @@ function RollingChair(type, color) {
 **/
 function Cube(length) {
   // Write constructor logic here to create a single cube seat object
+  var cubeLength = Math.pow(length, 3);
+  return cubeLength;
 }
+
+Cube();
+
+var cube1 = new Cube(3);
+var cube2 = new Cube(2);
+var cube3 = new Cube(4);
+
+
 
 // -- DON'T TOUCH CODE BELOW --
 module.exports = {
