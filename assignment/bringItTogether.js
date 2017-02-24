@@ -1,9 +1,13 @@
 console.log('File loaded!');
 
 // Call the function defined below to actually do something!
-convertRooms();
 
-function convertRooms() {
+
+function convertRooms(seatsNeeded, rollingChairs, cubes, colorOfSeats) {
+  this.seatsNeeded = seats;
+  this.rollingChairs = chairs;
+  this.cubes = cubes;
+  this.color = color;
   // Each array of data is in the order of: [total seats needed, rollingChairs, cubes, color of seats]
   var roomsArray = [[20, 10, 10, 'red'], [24, 10, 14, 'blue'], [23, 8, 11, 'black'], [18, 5, 13, 'blue']];
 
@@ -12,7 +16,16 @@ function convertRooms() {
   // Convert each room array into a Room object
   // Write code here, remember to log the new object you create at the end of
   // each iteration.
-}
+  }
+
+// for(var i = 0; i < roomsArray.length; i++) {
+  //  convertRooms(i);
+  //  console.log(i);
+//}
+
+convertRooms();
+// console.log(newRoom);
+
 
 /**
  * Represents a classroom at Prime

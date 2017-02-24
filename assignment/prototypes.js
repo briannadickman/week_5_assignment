@@ -26,7 +26,7 @@ Animal.prototype.meow = function() {
 // if so, console log "purrrrrr"
 // if not, console log "crabby face"
 
-Animal.prototype.isHappy = function(happy) {
+somethingFun.isHappy = function(happy) {
   if(happy === true) {
     console.log("purrrrrr");
   }
