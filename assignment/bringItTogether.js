@@ -13,19 +13,22 @@ function convertRooms() {
   // Convert each room array into a Room object
   // Write code here, remember to log the new object you create at the end of
   // each iteration.
+var Room = {};
+
+for( var key in roomsArray ) {
+    
+}
 
 
-(seatsNeeded, rollingChairs, cubes, colorOfSeats)
-  this.seatsNeeded = seats;
-  this.rollingChairs = chairs;
-  this.cubes = cubes;
-  this.color = color;
+  for(var i = 0; i < roomsArray.length; i++){
+    for(var j = 0; j < roomsArray.length; j++){
+
+    }
   }
-
 // for(var i = 0; i < roomsArray.length; i++) {
   //  convertRooms(i);
   //  console.log(i);
-//}
+}
 
 // console.log(newRoom);
 
@@ -56,6 +59,9 @@ function RollingChair(type, color) {
   this.color = color;
 }
 
+var rollingChair = new RollingChair("round", "green");
+console.log(rollingChair);
+
 /**
  * Represents a Cube seat
  * @constructor
@@ -64,17 +70,18 @@ function RollingChair(type, color) {
 **/
 function Cube(length) {
   // Write constructor logic here to create a single cube seat object
-  var cubeLength = Math.pow(length, 3);
-  return cubeLength;
+  this.length = length;
+  var volume = Math.pow(length, 3);
+  this.volume = volume;
+  return volume;
 }
 
-Cube();
+var cube0 = new Cube(3);
+console.log(cube0);
 
-var cube1 = new Cube(3);
-var cube2 = new Cube(2);
-var cube3 = new Cube(4);
-
-
+console.log(capacity);
+console.log(rollingChair);
+console.log(cube);
 
 // -- DON'T TOUCH CODE BELOW --
 module.exports = {
