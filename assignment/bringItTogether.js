@@ -13,24 +13,32 @@ function convertRooms() {
   // Convert each room array into a Room object
   // Write code here, remember to log the new object you create at the end of
   // each iteration.
-var Room = {};
+  var roomArray = [];
 
-for( var key in roomsArray ) {
-    
-}
+  function Room(totalSeats, rollingChairs, cubes, color) {
+        this.seats = totalSeats;
+        this.rollingChairs = rollingChairs;
+        this.cubes = cubes;
+        this.color = color;
+      }
 
+      //  var Room1 = new Room(i[0], i[1], i[2], i[3]);
+      //  console.log(Room1);
 
-  for(var i = 0; i < roomsArray.length; i++){
-    for(var j = 0; j < roomsArray.length; j++){
-
-    }
+  for (var i = 0; i < roomsArray.length; i++){
+        console.log(roomsArray[i]);
+        for (var j = 0; j < roomsArray[i].length; j++){
+           roomArray.push([i][j]);
+    //       roomArray.push(Room[x]);
+    //       x++;
+         }
+       }
+  console.log(roomArray);
   }
-// for(var i = 0; i < roomsArray.length; i++) {
-  //  convertRooms(i);
-  //  console.log(i);
-}
 
-// console.log(newRoom);
+
+
+
 
 
 /**
@@ -70,8 +78,8 @@ console.log(rollingChair);
 **/
 function Cube(length) {
   // Write constructor logic here to create a single cube seat object
-  this.length = length;
-  var volume = Math.pow(length, 3);
+  this.length = 24;
+  var volume = Math.pow(this.length, 3);
   this.volume = volume;
   return volume;
 }
