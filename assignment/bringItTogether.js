@@ -15,31 +15,22 @@ function convertRooms() {
   // each iteration.
   var roomArray = [];
 
-  function Room(totalSeats, rollingChairs, cubes, color) {
+  function roomBuilder(totalSeats, rollingChairs, cubes, color) {
         this.seats = totalSeats;
         this.rollingChairs = rollingChairs;
         this.cubes = cubes;
         this.color = color;
       }
 
-      //  var Room1 = new Room(i[0], i[1], i[2], i[3]);
-      //  console.log(Room1);
-
   for (var i = 0; i < roomsArray.length; i++){
-        console.log(roomsArray[i]);
-        for (var j = 0; j < roomsArray[i].length; j++){
-           roomArray.push([i][j]);
-    //       roomArray.push(Room[x]);
-    //       x++;
-         }
-       }
+        this.Room = new roomBuilder(roomsArray[i][0], roomsArray[i][1], roomsArray[i][2], roomsArray[i][3]);
+        console.log(this.Room);
+        roomArray.push(this.Room);
+        }
+
+  console.log("The following is the roomArray: ");
   console.log(roomArray);
   }
-
-
-
-
-
 
 /**
  * Represents a classroom at Prime
@@ -53,6 +44,7 @@ function convertRooms() {
 function Room(roomArray) {
   // Write constructor logic here to convert the array into a Room object
   // You will need to also create RollingChair and Cube objects!
+
 }
 
 /**
@@ -78,13 +70,13 @@ console.log(rollingChair);
 **/
 function Cube(length) {
   // Write constructor logic here to create a single cube seat object
-  this.length = 24;
+  this.length = length;
   var volume = Math.pow(this.length, 3);
   this.volume = volume;
   return volume;
 }
 
-var cube0 = new Cube(3);
+var cube0 = new Cube(24);
 console.log(cube0);
 
 console.log(capacity);
