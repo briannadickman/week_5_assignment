@@ -1,6 +1,8 @@
 console.log('File loaded!');
 
+
 // Call the function defined below to actually do something!
+var roomArray = [];
 convertRooms();
 
 function convertRooms() {
@@ -13,7 +15,6 @@ function convertRooms() {
   // Convert each room array into a Room object
   // Write code here, remember to log the new object you create at the end of
   // each iteration.
-  var roomArray = [];
 
   function roomBuilder(totalSeats, rollingChairs, cubes, color) {
         this.seats = totalSeats;
@@ -41,11 +42,17 @@ function convertRooms() {
  *  @property {Array} cubes - an array of cube objects
  *  @property {Array} color - color of rollingChairs
 **/
+
 function Room(roomArray) {
   // Write constructor logic here to convert the array into a Room object
   // You will need to also create RollingChair and Cube objects!
-
+  this.capacity = capacity;
+  this.rollingChairs = RollingChair();
+  this.cubes = Cube();
+  this.color = color;
 }
+
+Room();
 
 /**
  * Represents a Rolling Chair seat
