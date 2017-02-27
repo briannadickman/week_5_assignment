@@ -43,16 +43,82 @@ function convertRooms() {
  *  @property {Array} color - color of rollingChairs
 **/
 
-function Room(roomArray) {
+var capacity = roomArray[0].seats + roomArray[1].seats + roomArray[2].seats + roomArray[3].seats;
+var rollingChair = [];
+var cube = [];
+var colors = [];
+var room = {
+  name: "Empty"
+};
+
+// capacity = roomArray[0].seats + roomArray[1].seats + roomArray[2].seats + roomArray[3].seats;
+// console.log("Capacity is at: " + capacity);
+// console.log(roomArray[0]);
+
+function room() {
+  for (var i = 0; i < roomArray.length; i++) {
+    console.log("Hello from the thousandth loop");
+      // if(i === roomArray[i].seats){
+      //     capacity += roomArray[i].seats;
+      //     //console.log("from the loop:" + capacity);
+      //     return capacity;
+      // }
+      // room.push(this.capacity);
+  //    else if(i ===)
+    }
+
+  }
+
+  console.log("This room contains: " + room);
+
   // Write constructor logic here to convert the array into a Room object
   // You will need to also create RollingChair and Cube objects!
-  this.capacity = capacity;
-  this.rollingChairs = RollingChair();
-  this.cubes = Cube();
-  this.color = color;
-}
+  // function roomObject(capacity, rollingChairs, cubes, color) {
+  //   this.capacity = capacity;
+  //   this.rollingChairs = function() {
+  //       this.rollingChair = new RollingChair('square', 'green');};
+  //   this.cubes = function() {
+  //       this.cube = new Cube(24);};
+  //   this.color = color;
+  // }
 
-Room();
+// add capacity together for total capacity of Room
+// array of colors?
+// array of objects for rollingChair and Cube
+
+      // switch (combine) {
+      //   case roomArray[i].seats:
+      //     console.log('I need ' + roomArray[i].seats + " seats!");
+      //     break;
+      //   case 'rollingChairs':
+      //     console.log('I need ' + roomArray[i].rollingChairs + " rolling chairs!");
+      //     break;
+      //   case 'cubes':
+      //     console.log('I need ' + roomArray[i].cubes + " cubes!");
+      //     break;
+      //   case 'color':
+      //     console.log('I need this color: ' + roomArray[i].color);
+      //     break;
+
+  //      if(roomArray[i].seats){
+  //        capacity += roomArray[i].seats;
+  //        console.log(capacity);
+  //        return capacity;
+  //      }
+  //      else if(roomArray[i].rollingChairs){
+//
+  //          rollingChairs.push(this.rollingChair);
+  //        }
+  //      }
+  //      else if(roomArray[i].cubes){
+  //          cubes.push(this.cube);
+  //    }
+  //      else if(roomArray[i].color){
+  //        colors.push(roomArray[i][3]);
+  //      }
+  //  }
+  //  console.log(i);
+  //}
 
 /**
  * Represents a Rolling Chair seat
