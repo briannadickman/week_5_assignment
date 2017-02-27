@@ -43,82 +43,56 @@ function convertRooms() {
  *  @property {Array} color - color of rollingChairs
 **/
 
-var capacity = roomArray[0].seats + roomArray[1].seats + roomArray[2].seats + roomArray[3].seats;
+var capacity = 0;
 var rollingChair = [];
 var cube = [];
 var colors = [];
-var room = {
-  name: "Empty"
-};
 
 // capacity = roomArray[0].seats + roomArray[1].seats + roomArray[2].seats + roomArray[3].seats;
 // console.log("Capacity is at: " + capacity);
 // console.log(roomArray[0]);
 
-function room() {
+function singleRoom() {
   for (var i = 0; i < roomArray.length; i++) {
-    console.log("Hello from the thousandth loop");
-      // if(i === roomArray[i].seats){
-      //     capacity += roomArray[i].seats;
-      //     //console.log("from the loop:" + capacity);
-      //     return capacity;
-      // }
-      // room.push(this.capacity);
-  //    else if(i ===)
+    capacity += roomArray[i].seats;
+    console.log(capacity);
+
+    colors.push(roomArray[i].color);
+    console.log(colors);
+
+  for (var j = 0; j < roomArray[i].rollingChairs; j++) {
+    this.rollingChairs = new RollingChair();
+    rollingChair.push(this.rollingChairs);
     }
-
+  for (var x = 0; x < roomArray[i].cubes; x++) {
+    this.cubes = new Cube();
+    cube.push(this.cubes);
+      }
   }
+  // room = Object.assign(roomArray[0], roomArray[1], roomArray[2], roomArray[3]);
+    // for (var i = 0; i < roomArray.length; i++) {
+    //     room[roomArray[i].key] = roomArray[i].value;
+    // }
 
-  console.log("This room contains: " + room);
+}
+singleRoom();
 
-  // Write constructor logic here to convert the array into a Room object
-  // You will need to also create RollingChair and Cube objects!
-  // function roomObject(capacity, rollingChairs, cubes, color) {
-  //   this.capacity = capacity;
-  //   this.rollingChairs = function() {
-  //       this.rollingChair = new RollingChair('square', 'green');};
-  //   this.cubes = function() {
-  //       this.cube = new Cube(24);};
-  //   this.color = color;
-  // }
+var room = {capacity, rollingChair, cube, colors};
+
+console.log("This room needs to contain:");
+console.log(room);
+
+  // this.capacity = capacity;
+  // this.rollingChairs = rollingChairs;
+  // this.cubes = cubes;
+  // this.color = color;
+
+//***NOTES TO SELF***
 
 // add capacity together for total capacity of Room
 // array of colors?
 // array of objects for rollingChair and Cube
 
-      // switch (combine) {
-      //   case roomArray[i].seats:
-      //     console.log('I need ' + roomArray[i].seats + " seats!");
-      //     break;
-      //   case 'rollingChairs':
-      //     console.log('I need ' + roomArray[i].rollingChairs + " rolling chairs!");
-      //     break;
-      //   case 'cubes':
-      //     console.log('I need ' + roomArray[i].cubes + " cubes!");
-      //     break;
-      //   case 'color':
-      //     console.log('I need this color: ' + roomArray[i].color);
-      //     break;
-
-  //      if(roomArray[i].seats){
-  //        capacity += roomArray[i].seats;
-  //        console.log(capacity);
-  //        return capacity;
-  //      }
-  //      else if(roomArray[i].rollingChairs){
-//
-  //          rollingChairs.push(this.rollingChair);
-  //        }
-  //      }
-  //      else if(roomArray[i].cubes){
-  //          cubes.push(this.cube);
-  //    }
-  //      else if(roomArray[i].color){
-  //        colors.push(roomArray[i][3]);
-  //      }
-  //  }
-  //  console.log(i);
-  //}
 
 /**
  * Represents a Rolling Chair seat
@@ -128,12 +102,12 @@ function room() {
 **/
 function RollingChair(type, color) {
   // Write constructor logic here to create a single rolling chair object
-  this.type = type;
-  this.color = color;
+  this.type = "round";
+  this.color = "green";
 }
 
-var rollingChair = new RollingChair("round", "green");
-console.log(rollingChair);
+// var rollingChair = new RollingChair("round", "green");
+// console.log(rollingChair);
 
 /**
  * Represents a Cube seat
@@ -143,14 +117,14 @@ console.log(rollingChair);
 **/
 function Cube(length) {
   // Write constructor logic here to create a single cube seat object
-  this.length = length;
+  this.length = 24;
   var volume = Math.pow(this.length, 3);
   this.volume = volume;
   return volume;
 }
 
-var cube0 = new Cube(24);
-console.log(cube0);
+// var cube0 = new Cube(24);
+// console.log(cube0);
 
 console.log(capacity);
 console.log(rollingChair);
