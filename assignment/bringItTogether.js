@@ -123,13 +123,6 @@ function Cube(length) {
   return volume;
 }
 
-// var cube0 = new Cube(24);
-// console.log(cube0);
-
-console.log(capacity);
-console.log(rollingChair);
-console.log(cube);
-
 // -- DON'T TOUCH CODE BELOW --
 module.exports = {
   Room: Room,
